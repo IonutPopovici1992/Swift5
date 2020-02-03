@@ -12,6 +12,8 @@
 		5241280A23DF7E6800E8B3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5241280823DF7E6800E8B3F4 /* Main.storyboard */; };
 		5241280C23DF7E6900E8B3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5241280B23DF7E6900E8B3F4 /* Assets.xcassets */; };
 		5241280F23DF7E6900E8B3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5241280D23DF7E6900E8B3F4 /* LaunchScreen.storyboard */; };
+		52486B2B23E8272600C15977 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52486B2A23E8272600C15977 /* Constants.swift */; };
+		52486B2D23E849FA00C15977 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52486B2C23E849FA00C15977 /* LoginVC.swift */; };
 		5251ADF623E077E100690F7B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5251ADF423E077E100690F7B /* SWRevealViewController.m */; };
 		52890E4323E30AB5009C5AA1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52890E4223E30AB5009C5AA1 /* GradientView.swift */; };
 		52A6BE8A23E1CC8C00E21974 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6BE8923E1CC8C00E21974 /* ChatVC.swift */; };
@@ -28,6 +30,8 @@
 		5241280B23DF7E6900E8B3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5241280E23DF7E6900E8B3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5241281023DF7E6900E8B3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52486B2A23E8272600C15977 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52486B2C23E849FA00C15977 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5251ADF323E077E000690F7B /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		5251ADF423E077E100690F7B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5251ADF523E077E100690F7B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 		5241280123DF7E6800E8B3F4 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				52486B2923E826A200C15977 /* Utilities */,
 				52A6BE8823E1CBA200E21974 /* Model */,
 				52A6BE8723E1CB8900E21974 /* View */,
 				52A6BE8623E1CB2100E21974 /* Controller */,
@@ -93,11 +98,20 @@
 			path = Smack;
 			sourceTree = "<group>";
 		};
+		52486B2923E826A200C15977 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				52486B2A23E8272600C15977 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		52A6BE8623E1CB2100E21974 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				52A6BE8B23E1CD0400E21974 /* ChannelVC.swift */,
 				52A6BE8923E1CC8C00E21974 /* ChatVC.swift */,
+				52A6BE8B23E1CD0400E21974 /* ChannelVC.swift */,
+				52486B2C23E849FA00C15977 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,8 +268,10 @@
 			files = (
 				52A6BE8A23E1CC8C00E21974 /* ChatVC.swift in Sources */,
 				5241280323DF7E6800E8B3F4 /* AppDelegate.swift in Sources */,
+				52486B2D23E849FA00C15977 /* LoginVC.swift in Sources */,
 				52890E4323E30AB5009C5AA1 /* GradientView.swift in Sources */,
 				5241280523DF7E6800E8B3F4 /* SceneDelegate.swift in Sources */,
+				52486B2B23E8272600C15977 /* Constants.swift in Sources */,
 				5251ADF623E077E100690F7B /* SWRevealViewController.m in Sources */,
 				52A6BE8C23E1CD0400E21974 /* ChannelVC.swift in Sources */,
 			);
