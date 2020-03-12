@@ -17,6 +17,8 @@ class ChannelVC: UIViewController {
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
+    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
