@@ -247,7 +247,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuf-eY-ffR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuf-eY-ffR" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="82" y="306" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -391,18 +391,9 @@
                                 <state key="normal" title="Choose avatar">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oG-wh-pMI">
-                                <rect key="frame" x="82" y="646" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="AGf-I7-f7t"/>
-                                    <constraint firstAttribute="height" constant="50" id="lZH-3V-pea"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Create Account">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <connections>
+                                    <action selector="pickAvatarPressed:" destination="8bw-kP-2lu" eventType="touchUpInside" id="Foi-W2-r8E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1as-2Q-WFm">
                                 <rect key="frame" x="82" y="478.66666666666669" width="250" height="30"/>
@@ -415,7 +406,22 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccountButtonPressed:" destination="51F-py-JIY" eventType="touchUpInside" id="TGz-u0-O7t"/>
+                                    <action selector="pickBGColorPressed:" destination="8bw-kP-2lu" eventType="touchUpInside" id="g58-08-fkV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oG-wh-pMI" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
+                                <rect key="frame" x="82" y="646" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="AGf-I7-f7t"/>
+                                    <constraint firstAttribute="height" constant="50" id="lZH-3V-pea"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="8bw-kP-2lu" eventType="touchUpInside" id="257-9V-yBf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -441,6 +447,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="tJ0-tg-sCB"/>
                     <connections>
+                        <outlet property="emailText" destination="WRx-Og-f7E" id="kCN-6z-sKY"/>
+                        <outlet property="passwordText" destination="l0z-FK-M8l" id="KKI-Tn-Ave"/>
+                        <outlet property="userImage" destination="RrW-do-KEd" id="0WA-rs-OYd"/>
+                        <outlet property="usernameText" destination="A8X-8x-sZm" id="PR1-G8-J58"/>
                         <segue destination="Gzb-4L-OvZ" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="pw9-w7-hCT"/>
                     </connections>
                 </viewController>
