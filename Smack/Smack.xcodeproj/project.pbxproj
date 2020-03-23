@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5204A44F2428A08600EB2E18 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204A44E2428A08600EB2E18 /* UserDataService.swift */; };
 		52168ED52417CA1D00789B38 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52168ED42417CA1D00789B38 /* CreateAccountVC.swift */; };
 		5241280323DF7E6800E8B3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241280223DF7E6800E8B3F4 /* AppDelegate.swift */; };
 		5241280523DF7E6800E8B3F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5241280423DF7E6800E8B3F4 /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		12B70E1AA1BCA6D65E9F6278 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
+		5204A44E2428A08600EB2E18 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		52168ED42417CA1D00789B38 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		524127FF23DF7E6800E8B3F4 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5241280223DF7E6800E8B3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				52A7AD61241F686800DB5721 /* AuthService.swift */,
+				5204A44E2428A08600EB2E18 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				52890E4323E30AB5009C5AA1 /* GradientView.swift in Sources */,
 				5241280523DF7E6800E8B3F4 /* SceneDelegate.swift in Sources */,
 				52168ED52417CA1D00789B38 /* CreateAccountVC.swift in Sources */,
+				5204A44F2428A08600EB2E18 /* UserDataService.swift in Sources */,
 				524C42362420F30400EF20BD /* RoundedButton.swift in Sources */,
 				52486B2B23E8272600C15977 /* Constants.swift in Sources */,
 				52A7AD62241F686800DB5721 /* AuthService.swift in Sources */,
